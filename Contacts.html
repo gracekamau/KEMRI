@@ -1,0 +1,90 @@
+<html>
+<head>
+   
+<title>  Contacts </title>
+<!--Make the website responsive or respond to different screen sizes-->
+<meta name="viewport" content="width-device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<meta name="HandheldFriendly" content="true">
+
+<!--This the stylesheet and the corresponding title icons-->
+<link rel="stylesheet" type="text/css" href="styles.css" />
+
+<link rel="icon" href="souvenirs.png" type="image/icon type">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+                var x = document.getElementById("myTopNav");
+                if (x.className === "TopNav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "TopNav";
+                }
+                }
+    
+</script>
+
+</head>
+<body>
+
+
+    
+    
+    <!-- hyperlinks to jump us to different pages-->
+<div class="TopNav" id="myTopNav">
+    <a href="Home.html">Home</a>
+    <a href="COVID-19.html">COVID-19</a> 
+    <a href="Careers.html">Careers</a> 
+    <a href="#">Contact us</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+</a>
+</div>
+
+<h1>KEMRI WOULD LOVE TO HEAR FROM YOU</h1>
+LOCATED IN NAIROBI </br>
+E-mail:director@kemri.org </br>
+Call us on: +254722205901 </br>
+
+<form action="results.html" method="POST">
+
+
+    Name: <input type="text" size="30"  name="Fname" required placeholder="Your Name"/> 
+    E-mail: <input type="text" size="30" name="Lname" required placeholder="Your e-mail"/></br>
+    Subject: <input type="text" size="30"  name="Fname" required placeholder="Subject"/> </br>
+   
+
+    <textarea rows="10" cols="50">
+        Message
+    </textarea></br>
+
+<a href="Thank you.html"><button type="">Send Message</button></a>
+</form>
+
+</body>
+<style>
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: red;
+      color: white;
+      text-align: center;
+    }
+    </style>
+    
+    <div class="footer">
+        <p>Find out more about KEMRI</p>
+        <p>Tel: +254722205901 or director@kemri.org</p>
+        <p>Regional Office</p>
+        <p>Kenya Medical</p>
+        <p>Off Mbagathi Road</p>
+        <p>NAIROBI, KENYA</p>
+    </div>
+</html>
