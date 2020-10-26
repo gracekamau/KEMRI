@@ -32,15 +32,15 @@
 </head>
 <body>
 
-
-    
+    <img src="logo.png" alt="logo" />
+</br>
     
     <!-- hyperlinks to jump us to different pages-->
 <div class="TopNav" id="myTopNav">
-    <a href="Home.html">Home</a>
+    <a href="index.html">Home</a>
     <a href="COVID-19.html">COVID-19</a> 
     <a href="Careers.html">Careers</a> 
-    <a href="#">Contact us</a>
+    <a href="Contacts.html">Contact us</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
 </a>
@@ -50,7 +50,7 @@
 Thank you for your interest in working with us. Please check below for available job opportunities that meet your criteria and send your application by filling out the job application form. </br>
 
 
-<form action="results.html" method="POST">
+<form action="Thank you.html" method="POST">
 
 
     First Name: <input type="text" size="30"  name="Fname" required placeholder="firstname required"/></br>
@@ -58,19 +58,42 @@ Thank you for your interest in working with us. Please check below for available
     Email Address: <input type="text" size="30"  name="Fname" required placeholder="Email Address"/></br>
     Phone: <input type="text" size="30" name="Lname" required placeholder="Phone"/><br>
 
+    <h4>What position are you applying for?</h4>
+        <select>
+            <option>Research Scientist</option>
+            <option>Assistant Research Officer</option>
+            <option>Data Manager</option>
+            <option>Nursing Officer</option>
+            <option>Software Developer</option>
+            <option>Senior Project Manager</option>
+            <option>Monitoring and evaluation officer</option>
+            <option>Clerk</option>
+        </select> </br>
    
+        <h4>What is your current employment status?</h4>
 
-<a href="Thank you.html"><button type="">Send Message</button></a>
+        <input type="radio" value="under" name="status"> Employed <br>
+        <input type="radio" value="over" name="status"> Self-Employed <br>
+        <input type="radio" value="youth" name="status"> Unemployed <br>
+        <input type="radio" value="old" name="status"> Student <br>
+
+        <label for="myfile">Upload your CV here:</label></br>
+        <input type="file" id="myfile" name="myfile"><br><br>
+       
+        <input type="submit" value="Submit" name="submit"/>
+        <input type="reset" value="Cancel" name="reset"/>
 </form>
+
+
 
 </body>
 <style>
     .footer {
-      position: fixed;
+      position:relative;
       left: 0;
       bottom: 0;
       width: 100%;
-      background-color: red;
+      background-color: gray;
       color: white;
       text-align: center;
     }

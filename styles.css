@@ -1,7 +1,119 @@
-.logo{
-    text-indent: -999999999px;
-    background: url('logo.png');
-    width: 948px;
-    height: 60px;
-    background-repeat: no-repeat;
+body{
+    background-color:darkgray;
+    color: whitesmoke;
 }
+
+h1{
+    color: black;
+    font: bold;
+    text-align: center;
+    width: auto;
+    padding: 10px;
+}
+
+a{
+    background-color: rgb(33, 66, 94);
+    color: whitesmoke;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: 1000;
+    font-family: sans-serif;
+    font-style: normal;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: rgb(0, 162, 255);
+    color: black;
+    padding: 10px;
+}
+
+/* Classes --- you can change a particular tag using the class --- dot notation */
+
+.TopNav { /* Top Navigation */
+    background-color: rgb(33, 66, 94);
+    width: auto;
+    overflow: hidden;
+}
+
+.TopNav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.TopNav .icon {
+    display: none;
+}
+
+/* Format the form fields*/
+
+input[type=text] {
+    width: 100%;
+    padding: 15px 22px;
+    margin: 10px 5px;
+    box-sizing: border-box;
+    background-color:  rgb(33, 66, 94);
+    color: black;
+}
+
+input[type=text]:focus{
+    border: 5px solid rgb(0, 162, 255);
+   
+}
+
+/* format the buttons */
+
+input[type=submit] {
+    background-color: rgb(33, 66, 94);
+    color: linen;
+    width: 100px;
+    padding: 10px 22px;
+    border: 5px solid rgb(0, 162, 255);
+    }
+    
+    input[type=reset] {
+        background-color:rgb(33, 66, 94);
+        color: linen;
+        width: 100px;
+        padding: 10px 22px;
+        border: 5px solid rgb(0, 162, 255);
+        }
+    
+        input[type=submit]:hover {
+            background-color: whitesmoke;
+            color: black;
+            padding: 10px;
+        }
+    
+        input[type=reset]:hover {
+            background-color: whitesmoke;
+            color: black;
+            padding: 10px;
+    
+        }
+    
+        @media screen and (max-width: 600px) {
+            .TopNav a:not(:first-child) {display: none;}
+            .TopNav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+    
+        @media screen and (max-width: 600px) {
+            .TopNav.responsive {position: relative;}
+            .TopNav.responsive a.icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .TopNav.responsive a {
+                float: none;
+                display: block;
+                text-align: left ;
+            }
+        }
